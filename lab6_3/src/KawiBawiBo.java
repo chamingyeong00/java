@@ -6,6 +6,7 @@ public class KawiBawiBo {
         players[0] = new Player("철수");
         players[1] = new Computer("컴퓨터");
     }
+
     public KawiBawiBo(Player player0, Player player1){
         players[0] = player0;
         players[1] = player1;
@@ -18,8 +19,7 @@ public class KawiBawiBo {
             if(choiceOfPlayer0 == 4)
                 break;
             choiceOfPlayer1 = players[1].turn();
-
-            ;System.out.println(players[0].getName() + "(" + s[choiceOfPlayer0-1] + ") : " + players[1].getName() + "(" + s[choiceOfPlayer1-1] + ")");
+            System.out.println(players[0].getName() + "(" + s[choiceOfPlayer0-1] + ") : " + players[1].getName() + "(" + s[choiceOfPlayer1-1] + ")");
             int diff = choiceOfPlayer0 - choiceOfPlayer1;
             switch(diff) {
                 case 0:

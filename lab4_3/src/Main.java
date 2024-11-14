@@ -19,7 +19,6 @@ class Day
 }
 
 class MonthSchedule {
-
     public Day[] day;
     Scanner scanner = new Scanner(System.in);
 

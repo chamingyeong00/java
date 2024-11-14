@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Circle c [] = new Circle[3];
-        for (int i=0; i<3; i++){
+        for (int i=0; i<c.length; i++){
             System.out.print("x, y, radius >>");
             double x = scanner.nextDouble();
             double y = scanner.nextDouble();

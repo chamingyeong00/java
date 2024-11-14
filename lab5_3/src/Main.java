@@ -44,7 +44,9 @@ class StringStack implements Stack{
 class StackApp extends StringStack{
     Scanner scanner = new Scanner(System.in);
     public StackApp(int size){
+
         super(size);
+
     }
     public void run(){
         while(true)

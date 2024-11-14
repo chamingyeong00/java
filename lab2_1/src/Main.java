@@ -22,7 +22,7 @@ public class Main {
         int room = person / 2 + person % 2;
         //((long)person / 2)== 1) ?
 
-        int cost = (room* hotel * day) + (person * airplane);
+        int cost = (room * hotel * day) + (person * airplane);
         System.out.print( person +"명의 " + place + " " + day + "박 " + (day + 1) + "일 여행에는 방이 " + room + "개 필요하며 경비는 " + cost + "원입니다.");
     }
 }
