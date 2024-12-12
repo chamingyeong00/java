@@ -50,6 +50,23 @@ public class MyFrame extends JFrame {
                 source.setText("");
             }
         });
+        //람다 {} 함수 바디
+        /*btn.addActionListener(e -> {
+                String value = source.getText();
+                try{
+                    int money = Integer.parseInt(value);
+                    int res;
+                    for (int i = 0 ; i<units.length; i++){
+                        res = money/units[i];
+                        outputTFs[i].setText(res+"");
+                        money = money % units[i];
+                    }
+                }catch(NumberFormatException ex){
+
+                }
+                source.setText("");
+            }
+        });*/
 
         setSize(300, 300);
         setVisible(true);
