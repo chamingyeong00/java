@@ -60,7 +60,6 @@ public class MyFrame extends JFrame {
                 source.setText("");
             }
         });
-
         setSize(300, 300);
         setVisible(true);
     }

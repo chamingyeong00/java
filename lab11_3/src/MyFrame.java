@@ -30,6 +30,7 @@ public class MyFrame extends JFrame {
                     try {
                         inputArea.setText(inputArea.getText(0, 100));
                     } catch (BadLocationException ex) {
+                        //문자열을 조작할 때 잘못된 위치에 접근하려고 하면 발생하는 예외
                     }
                     size = 100;
                 }
@@ -52,8 +53,6 @@ public class MyFrame extends JFrame {
         });
         setSize(300, 300);
         setVisible(true);
-
-
     }
     public static void main(String[] args) {
         new MyFrame();

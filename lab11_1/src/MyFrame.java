@@ -41,13 +41,12 @@ public class MyFrame extends JFrame {
                     int res;
                     for (int i = 0 ; i<units.length; i++){
                         res = money/units[i];
-                        outputTFs[i].setText(res+"");
+                        outputTFs[i].setText(res+"");//res 정수를 문자열로 변환하려고 "" 추가
                         money = money % units[i];
                     }
                 }catch(NumberFormatException ex){
-
                 }
-                source.setText("");
+                source.setText(""); //금액 텍스트 초기화
             }
         });
         //람다 {} 함수 바디

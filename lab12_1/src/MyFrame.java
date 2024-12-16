@@ -4,7 +4,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class MyFrame extends JFrame {
-
     class MyPanel extends JPanel implements Runnable{
         private int x = 100;
         private int y = 100;

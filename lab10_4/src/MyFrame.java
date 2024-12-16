@@ -20,7 +20,6 @@ public class MyFrame extends JFrame{
                 Font.BOLD | Font.ITALIC, 10));
         jLabel.setBackground(Color.MAGENTA);
 
-
         c.add(jLabel);
         jLabel.addKeyListener(new KeyAdapter() {
             @Override
@@ -80,19 +79,3 @@ public class MyFrame extends JFrame{
         new MyFrame();
     }
 }
-
-/*
-int n = e.getWheelRotation();
-
-label.addMouseWheelListener(new MouseWheelListener(){
-    public void mouseWheelMoved(MouseWheelEvent e){
-        int n = e.getWheelRotation();
-        if (n<0){
-            jLabel1.setFont(new Font(f.getFontName(), f.getStyle(), size-5));
-        }
-        else{
-            jLabel1.setFont(new Font(f.getFontName(), f.getStyle(), size+5));
-        }
-    }
-});
-*/

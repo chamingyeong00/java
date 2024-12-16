@@ -177,7 +177,5 @@ public class Game extends JFrame {
                 return false;
         }
     }
-
-
 }
 
