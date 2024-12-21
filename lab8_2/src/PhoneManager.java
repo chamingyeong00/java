@@ -16,7 +16,7 @@ public class PhoneManager {
         try{
             Scanner fscanner = new Scanner(new FileReader(file));
             while(fscanner.hasNext()){
-                String name = fscanner.next();
+                String name = fscanner.next(); //공백, 탭, 줄바꿈까지 읽음
                 String num = fscanner.next();
                 phoneMap.put(name, num);
             }

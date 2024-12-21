@@ -7,6 +7,7 @@ public class MyFrame extends JFrame {
     class MyPanel extends JPanel implements Runnable{
         private int x = 100;
         private int y = 100;
+
         public MyPanel(){
             this.addMouseListener(new MouseAdapter() {
                 private Thread th = null;
@@ -18,6 +19,7 @@ public class MyFrame extends JFrame {
                 }
             });
         }
+
         public void paintComponent(Graphics g){
             super.paintComponent(g);
             g.setColor(Color.CYAN);

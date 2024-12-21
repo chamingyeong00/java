@@ -22,7 +22,7 @@ public class LocationManager {
 
     private void printAll(){
         var keys = citys.keySet();
-        var it = keys.iterator();
+        var it = keys.iterator(); //키 값만 순회
         System.out.println("---------------------");
         while(it.hasNext()){
             System.out.println(citys.get(it.next()));

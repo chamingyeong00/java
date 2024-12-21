@@ -34,8 +34,8 @@ public class MyFrame extends JFrame{
         });
         setSize(300, 100);
         setVisible(true);
-        jLabel.setFocusable(true);
-        jLabel.requestFocus();
+        jLabel.setFocusable(true); //포커스를 받을 수 있는지 여부 설정
+        jLabel.requestFocus(); //해당 컴포넌트에 포커스를 강제로 설정
     }
     public static void main(String[] args) {
         new MyFrame();

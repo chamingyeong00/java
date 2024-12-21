@@ -2,8 +2,8 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
-        //FileReader fin = null;
-        FileInputStream fin = null;
+        //FileReader fin = null; //텍스트
+        FileInputStream fin = null; //바이트
         FileWriter fout = null;
         File inputFile = new File("/Users/it/IdeaProjects/test.rtf");
         File outputFile = new File ("/Users/it/IdeaProjects/test1.rtf\");

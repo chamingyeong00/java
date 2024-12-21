@@ -18,7 +18,7 @@ public class Game extends JFrame {
         public GamePanel() {
             setLayout(null);
             baseLabel.setSize(40,40);
-            baseLabel.setOpaque(true);
+            baseLabel.setOpaque(true); //불투명(Opaque): 컴포넌트가 완전히 불투명하여 아래에 있는 컴포넌트를 가린다
             baseLabel.setBackground(Color.BLACK);
 
             ImageIcon img = new ImageIcon("resources/images/target.png");
@@ -131,11 +131,12 @@ public class Game extends JFrame {
                     targetThread.interrupt();
                     bullet.setLocation(bullet.getParent().getWidth()/2 - bullet.getWidth()/2,
                             bullet.getParent().getHeight() - 40 - bullet.getHeight());
+                    //baselabel
                     return;
                 }
 
                 int x = bullet.getX();
-                int y = bullet.getY() -5;
+                int y = bullet.getY() -5; //위로 이동
                 if(y < 0) {
                     bullet.setLocation(bullet.getParent().getWidth()/2 - bullet.getWidth()/2,
                             bullet.getParent().getHeight() - 40 - bullet.getHeight());

@@ -7,7 +7,7 @@ public class Main {
         c.setF
         supser ("KeyEvent 예제");
         setDefaultClos
-                Container c = getContentPane();
+        Container c = getContentPane();
         c.setLayout(new FlowLayout());
 
         keyMsg = new JLabel[3];

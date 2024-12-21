@@ -24,7 +24,7 @@ public class GraphicEditor {
                 System.out.println("잘못된 입력!!");
                 return;
         }
-        v.add(shape);
+        v.add(shape); //v는 0부터 추가
     }
 
     private void delete(){
@@ -63,7 +63,4 @@ public class GraphicEditor {
             }
         }
     }
-
-
-
 }

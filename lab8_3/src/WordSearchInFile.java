@@ -25,6 +25,7 @@ public class WordSearchInFile {
         }
         System.out.println(targetFile.getName() + " : " + lines.size());
     }
+
     private ArrayList<Integer> searchWord(String word){
         var idxs = new ArrayList<Integer>();
         int num=0;

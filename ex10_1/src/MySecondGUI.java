@@ -19,7 +19,7 @@ public class MySecondGUI extends JFrame {
         c.setLayout(new FlowLayout());
         JButton btn = new JButton("Action");
         c.add(btn);
-        btn.addActionListener(
+        btn.addActionListener( //사용자가 클릭 동작을 완료했을 때
                 new ActionListener(){ //익명 클래스
             @Override
             public void actionPerformed(ActionEvent e) {
